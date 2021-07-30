@@ -59,6 +59,10 @@ h1 {
     margin: -1.3rem 0 2rem 0;
 }
 
+.cadastro #name {
+    margin-top: -15px;
+}
+
 input.campo,
 .campo {
     width: 16rem;

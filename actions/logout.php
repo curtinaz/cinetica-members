@@ -1,12 +1,9 @@
 <?php
 
-session_start();
+setcookie('logado', '', 1, '/');
 
-unset($_SESSION["login"]);
-unset($_SESSION["name"]);
+header('Location: ../index.php');
 
-session_destroy();
-
-header('Location: ../');
+echo 'thats all folks';
 
 ?>

@@ -1,58 +1,39 @@
 <?php
 
 require_once '../config.php';
-session_start();
 
 if (!$_POST['mail'] || !$_POST['senha']) {
     echo "Preencha todos os campos";
-
-    unset($_SESSION["logado"]);
-    unset($_SESSION["name"]);
-    unset($_SESSION["mail"]);
 } else {
-    $mail = $_POST['mail'];
+    $email = $_POST['mail'];
     $senha = md5($_POST['senha']);
 
-    $loginQuery = $conexao->query("SELECT * FROM users WHERE email = '$mail' AND senha = '$senha'");
+    $loginQuery = $conexao->query("SELECT * FROM user WHERE email = '$email' AND senha = '$senha'");
 
     if ($loginQuery->num_rows == 1) {
-        $userQuery = $conexao->query("SELECT `nome`, `email`, `id` FROM users WHERE email = '$mail' AND senha = '$senha'");
+        $userQuery = $conexao->query("SELECT `nome`, `email`, `id` FROM user WHERE email = '$email' AND senha = '$senha'");
         $userInfos = $userQuery->fetch_all(MYSQLI_ASSOC);
         // pega o nome do usuário do banco de dados.
 
-        $_SESSION["logado"]="YES";
-        $_SESSION["name"]=$userInfos[0]['nome'];
-        $_SESSION["user_id"]=$userInfos[0]['id'];
-        $_SESSION["email"]=$userInfos[0]['email'];
+        // $_COOKIE["logado"]="YES";
+        // $_COOKIE["name"]=$userInfos[0]['nome'];
+        // $_COOKIE["user_id"]=$userInfos[0]['id'];
+        // $_COOKIE["email"]=$userInfos[0]['email'];
+
+        setcookie("logado", "YES", strtotime('+30 days'), "/");
+        setcookie("name", $userInfos[0]['nome'], strtotime('+30 days'), "/");
+        setcookie("user_id", $userInfos[0]['id'], strtotime('+30 days'), "/");
+        setcookie("email", $userInfos[0]['email'], strtotime('+30 days'), "/");
+
+
         // define que o usuário está logado e, define a variável de sessão name com o valor retirado do banco de dados.
 
-        header('Location: ../logado/');
+        header("Location: ../index.php");
+        die();
         
     } else {
         echo "Dados invalidos. <a href='../'>Refaça o login</a>";
     }
 }
-
-//     $checkSQL = ;
-//     $checkReturn = $checkSQL->fetch_all(MYSQLI_ASSOC);
-
-//     if (sizeof($checkReturn) == 1) {
-//         $db_email = $checkReturn[0]['email'];
-//         $db_pass = $checkReturn[0]['senha'];
-//         $db_name = $checkReturn[0]['nome'];
-//         // não achei necessário verificar se o e-mail e senha batem porque caso contrario, sizeof($checkReturn) seria 0;
-
-//         echo "Logado com sucesso";
-
-//         $_SESSION["login"]="YES"; // define a variavel de sessão login como YES
-//         $_SESSION["name"]=$db_name; // define a variavel de sessão name o valor da coluna name resultante da query SQL.
-
-//         header('Location: ./memberArea.php');
-//     } else {
-//         echo "Senha ou e-mail incorretos.";
-//     }
-
-
-// }
 
 ?>
