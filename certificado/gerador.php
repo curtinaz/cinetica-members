@@ -13,9 +13,9 @@ require('PHPMailer/class.phpmailer.php');
 // $nome     = utf8_decode($_POST['nome']);
 // $cpf      = $_POST['cpf'];
 
-$email = "sucosuave@gmail.com";
+$email = $_SESSION['email'];
 $nome = $_SESSION['name'];
-$cpf = "87446324015";
+$cpf = "last";
 
 // --------- Variáveis que podem vir de um banco de dados por exemplo ----- //
 $empresa  = "Universidade do Lincoln Borges";
@@ -70,8 +70,8 @@ $pdfdoc = $pdf->Output('', 'S');
 // ******** Agora vai enviar o e-mail pro usuário contendo o anexo
 // ******** e também mostrar na tela para caso o e-mail não chegar
 
-$subject = 'Seu Certificado do Workshop';
-$messageBody = "Olá $nome<br><br>É com grande prazer que entregamos o seu certificado.<br>Ele está em anexo nesse e-mail.<br><br>Atenciosamente,<br>Lincoln Borges<br><a href='http://www.lnborges.com.br'>http://www.lnborges.com.br</a>";
+$subject = 'Seu Certificado do Workshop Chegou!';
+$messageBody = "Olá $nome, tudo bem?<br><br>É com grande prazer que entregamos o seu certificado.<br>Ele está em anexo nesse e-mail.<br><br>Atenciosamente,<br>Equipe Cinética<br><a href='https://cineticaedu.com/'>cineticaedu.com</a>";
 
 
 $mail = new PHPMailer(); // por algum motivo, não está enviando

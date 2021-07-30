@@ -19,6 +19,7 @@ if (!$_POST['mail'] || !$_POST['senha']) {
 
         // $_COOKIE["logado"]="YES";
         $_SESSION["name"]=$userInfos[0]['nome'];
+        $_SESSION["email"]=$userInfos[0]['email'];
         // $_COOKIE["user_id"]=$userInfos[0]['id'];
         // $_COOKIE["email"]=$userInfos[0]['email'];
 
