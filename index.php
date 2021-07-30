@@ -39,7 +39,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
             
             <input class="campo" id="name" name="name" type="text" placeholder="Nome Completo" required>
 
-            <input class="campo" id="telefone" name="telefone" type="tel" placeholder="Nº Telefone" required>
+            <input class="campo" id="telefone" name="telefone" type="tel" placeholder="Número Telefone" required>
 
             <input class="campo" id="mail" name="mail" type="email" placeholder="E-mail" required>
 
@@ -371,7 +371,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
 
                                     <div class="mb-4">
                                         <button class="btn btn-outline-success btn-block btn-lg">Marcar como concluído</button>
-                                        <button class="btn btn-light btn-block">Emitir certificado</button>
+                                        <a href="./certificado/gerador.php" ><button class="btn btn-light btn-block">Emitir certificado</button></a>
                                     </div>
 
                                     <div class="mb-4 text-center">

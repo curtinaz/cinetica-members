@@ -3,7 +3,7 @@ $post = [
     'api_action' => 'contact_sync',
     'api_key' => '0ffbcd9d710bd5199b6f9d420d9feec7fd8e081147a6bed10c84b08fa93c09485c0b84df',
     'email'   => 'xurasteio@xuragou.com',
-    'first_name' => 'Cris',
+    'first_name' => 'XHR',
     'p[15]' => '15',
 ];
 

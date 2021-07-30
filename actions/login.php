@@ -8,6 +8,8 @@ if (!$_POST['mail'] || !$_POST['senha']) {
     $email = $_POST['mail'];
     $senha = md5($_POST['senha']);
 
+    session_start();
+
     $loginQuery = $conexao->query("SELECT * FROM user WHERE email = '$email' AND senha = '$senha'");
 
     if ($loginQuery->num_rows == 1) {
@@ -16,7 +18,7 @@ if (!$_POST['mail'] || !$_POST['senha']) {
         // pega o nome do usuário do banco de dados.
 
         // $_COOKIE["logado"]="YES";
-        // $_COOKIE["name"]=$userInfos[0]['nome'];
+        $_SESSION["name"]=$userInfos[0]['nome'];
         // $_COOKIE["user_id"]=$userInfos[0]['id'];
         // $_COOKIE["email"]=$userInfos[0]['email'];
 
