@@ -360,7 +360,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                 <div class="mb-3"><strong class="text-dark-gray">DESCRIÇÃO</strong></div>
                                 <p class="mb-3">
                                     Principais Testes Funcionais e metodologias de avaliação.
-                                </p>
+                                </p><br><br>
 
                             </div>
                             <div class="col-lg-4">
