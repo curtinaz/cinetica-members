@@ -376,17 +376,27 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
 
                                     $modulosQuery = $conexao->query("SELECT * FROM modulos WHERE cursoid = '1'");
                                     $infoModulos = $modulosQuery->fetch_all(MYSQLI_ASSOC);
-                                    if ($aulaQuery->num_rows == 1) {
-                                        $aulaTitulo = $infoAula[0]['titulo'];
-                                        $youtube = $infoAula[0]['youtube'];
+
+                                    
+                                    if ($modulosQuery->num_rows > 1) {
+
+                                        for ($i = 0; $i > $modulosQuery->num_rows; $i++) {
+                                            echo '<div class="mb-3"><strong class="text-dark-gray">Módulo 1</strong></div>';
+                                            echo '<p class="mb-3">';
+                                            echo 'Descrição do módulo';
+                                            echo '</p>';
+
+                                            for ($j = 0; )
+                                            $aulasQuery = $conexao->query("SELECT * FROM aulas WHERE modid = '$i'");
+                                            $infoAulas = $aulasQuery->fetch_all(MYSQLI_ASSOC);
+                                            $aulaTitulo = $infoAula[0]['titulo'];
+                                            $youtube = $infoAula[0]['youtube'];
+                                        }
                                     }
 
                                     ?>
 
-                                    <div class="mb-3"><strong class="text-dark-gray">Módulo 1</strong></div>
-                                    <p class="mb-3">
-                                        Descrição do módulo
-                                    </p>
+
 
 
                                     <div class="">
