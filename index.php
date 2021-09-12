@@ -6,57 +6,6 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
 
 ?> 
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-    <title>Conecte-se</title>
-</head>
-
-<body>
-    <main>
-        <div class="container">
-        <!-- Login -->
-        <form action="./actions/login.php" class="" id="login-form" method="POST">
-            <h1>Login</h1>
-            <input class="campo" id="mail" name="mail" type="email" placeholder="E-mail" required>
-            <input class="campo" id="senha" name="senha" type="password" placeholder="Senha" required>
-            <input type="submit" value="Entrar">
-
-            <a href="#register" onClick="changeTitle('Registre-se')" id="register_btn" style="margin-bottom: -.4rem;">Não tem uma conta? Cadastre-se</a>
-
-        </form>
-        
-
-        <!-- Cadastro -->
-        <form action="./actions/register.php" class="cadastro off" id="register-form" method="POST" required>
-            <h1>Cadastro</h1>
-            
-            <input class="campo" id="name" name="name" type="text" placeholder="Nome Completo" required>
-
-            <input class="campo" id="telefone" name="telefone" type="tel" placeholder="Número Telefone" required>
-
-            <input class="campo" id="mail" name="mail" type="email" placeholder="E-mail" required>
-
-            <input class="campo" id="senha" name="senha" type="password" placeholder="Senha" required>
-
-            <input type="submit" value="Cadastrar" >
-
-            <a href="#login" onClick="changeTitle('Conecte-se')" id="register_btn2" style="margin-bottom: -.0rem;">Já tem uma conta? Faça o login</a>
-        </form>
-        </div>
-    </main>
-
-
-    <script src="script.js"></script>
-</body>
-
-</html>
 
 <?php
 
@@ -79,7 +28,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Workshop de Testes Funcionais</title>
+    <title>Lessons</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -342,79 +291,143 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                 <div class="mdk-header-layout__content mdk-header-layout__content--fullbleed mdk-header-layout__content--scrollable page" style="padding-top: 60px;">
 
 
-                    <div class="page__heading border-bottom">
-                        <div class="container-fluid page__container d-flex align-items-center">
-                            <h1 class="mb-0">Workshop de Testes Funcionais</h1>
+                    <div class="hero-banner bg-primary d-flex flex-row align-items-center" style="height:250px;">
+                        <div class="container-fluid page__container">
+                            <div class="d-flex flex-column">
+                                <div class="mb-1">
+                                    <!-- <a href="#" class="badge badge-dark-gray text-white">Back to Courses</a> -->
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="mr-3">
+                                        <img src="assets/images/logos/rails.white.svg" width="100" alt="rails logo">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-white mb-0">Dermato Expert</h1>
+                                        <p class="lead text-white">O curso que te torna um expert em dermatologia</p>
+                                        <!-- <div class="my-2 text-white d-flex">
+                                            <strong class="mr-4 "><i class="material-icons icon-16pt icon-light">weekend</i> Beginner</strong>
+                                            <strong><i class="material-icons icon-16pt icon-light">watch_later</i> 2:42</strong>
+                                        </div> -->
+                                    </div>
+                                </div>
+
+                                <div class="mt-1">
+                                    <a href="#" class="btn btn-light btn-rounded mr-2">Assistir proxima aula</a>
+                                    <!-- <a href="#" class="btn btn-outline-light text-white btn-hover-primary btn-rounded"><i class="material-icons">local_activity</i> Add to list</a> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="container-fluid page__container">
                         <div class="row">
-                            <div class="col-lg-8">
-                                <a href="" class="dp-preview card">
-                                    <img src="https://trello-attachments.s3.amazonaws.com/605fabee0fd47879db19b6fc/60be4e4ed2e9e61bb9aa401d/20545830b75c56f31b3f66879f919d68/ss.png" alt="digital product" class="img-fluid">
-                                    <span class="dp-preview__overlay">
-                                        <span class="btn btn-light">ASSISTIR</span>
-                                    </span>
-                                </a>
-                                <div class="mb-3"><strong class="text-dark-gray">DESCRIÇÃO</strong></div>
-                                <p class="mb-3">
-                                    Principais Testes Funcionais e metodologias de avaliação.
-                                </p><br><br>
-
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card card-body">
-                                    <div class="d-flex align-items-center mb-3">
-                                       <img width="100%" src="https://cineticaedu.com/wp-content/uploads/2021/05/Agrupar-4-min.png">
-                                    </div>
-
-                                    <div class="mb-4">
-                                        <button class="btn btn-outline-success btn-block btn-lg">Marcar como concluído</button>
-                                        <a href="./certificado/gerador.php" ><button class="btn btn-light btn-block">Emitir certificado</button></a>
-                                    </div>
-
-                                    <div class="mb-4 text-center">
-                                        <div class="d-flex flex-column align-items-center justify-content-center">
-
-                                            <span class="mb-1">
-                                                <a href="#" class="rating-link active"><i class="material-icons ">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons ">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons ">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons ">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons ">star_half</i></a>
+                            <div class="col-md-4 order-12">
+                                <!-- <div class="card card-margin-md-negative-40">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item bg-light">
+                                            <a href="profile.html" class="flex d-flex align-items-center text-body text-underline-0">
+                                                <span class="avatar mr-3">
+                                                    <img src="assets/images/avatar/demi.png" alt="avatar" class="avatar-img rounded-circle">
+                                                </span>
+                                                <span class="flex d-flex flex-column">
+                                                    <strong>Adrian Demian</strong>
+                                                    <small class="text-muted text-uppercase">AUTHOR</small>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="mr-2">
+                                                <a href="#" class="rating-link active"><i class="material-icons">star</i></a>
+                                                <a href="#" class="rating-link active"><i class="material-icons">star</i></a>
+                                                <a href="#" class="rating-link active"><i class="material-icons">star</i></a>
+                                                <a href="#" class="rating-link active"><i class="material-icons">star</i></a>
+                                                <a href="#" class="rating-link active"><i class="material-icons">star_half</i></a>
                                             </span>
-                                            <div class="d-flex align-items-center">
-                                                <strong>4.8/5</strong>
-                                                <span class="text-muted ml-1">&mdash; 354 avaliações</span>
+                                            <strong>4.7</strong>
+                                            <span class="text-muted">(391 ratings)</span>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <strong>3872 people</strong> <span class="text-muted">completed this course</span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="" class="btn btn-facebook btn-rounded-social">
+                                                <svg width="14px" style="fill: currentColor;" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>Facebook icon</title>
+                                                    <path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
+                                                </svg>
+                                            </a>
+                                            <a href="" class="btn btn-twitter btn-rounded-social">
+                                                <svg width="14px" style="fill: currentColor;" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>Twitter icon</title>
+                                                    <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+                                                </svg>
+                                            </a>
+                                            <a href="" class="btn btn-secondary btn-rounded-social">
+                                                <i class="material-icons">mail</i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                            <div class="col-md-8">
+
+                                <div class="mb-3"><strong class="text-dark-gray">Módulo 1</strong></div>
+                                <p class="mb-3">
+                                   Descrição do módulo
+                                </p>
+
+
+                                <div class="">
+                                    <ul class="list-group list-lessons">
+                                        
+                                        <li class="list-group-item d-flex">
+                                        <a href="#">Aula 1</a>
+                                            <div class="ml-auto d-flex align-items-center">
+                                                <span class="badge badge-success mr-2">ASSISTIDA</span>
+                                                <span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 1:42</span>
                                             </div>
+                                        </li>
+                                        <li class="list-group-item d-flex">
+                                            <a href="#">Aula 2</a>
+                                            <div class="ml-auto">
+                                                <span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 2:21</span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex">
+                                            <a href="#">Aula 3</a>
+                                            <div class="ml-auto">
+                                                <span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 3:39</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><br>
 
-                                        </div>
-                                    </div>
-
-                                    <!-- <div class="list-group list-group-flush mb-4">
-                                        <div class="list-group-item bg-transparent d-flex align-items-center px-0">
-                                            <strong>Level</strong>
-                                            <div class="ml-auto">Beginner</div>
-                                        </div>
-                                        <div class="list-group-item bg-transparent d-flex align-items-center px-0">
-                                            <strong>Released</strong>
-                                            <div class="ml-auto">21 January 2019</div>
-                                        </div>
-                                        <div class="list-group-item bg-transparent d-flex align-items-center px-0">
-                                            <strong>Students</strong>
-                                            <div class="ml-auto">393</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card card-body mb-0 bg-dark">
-                                        <ul class="list-unstyled text-white ml-1 mb-0">
-                                            <li class="d-flex align-items-center pb-1"><i class="material-icons icon-16pt text-white mr-2">check_circle</i> Created by the Frontted Team</li>
-                                            <li class="d-flex align-items-center pb-1"><i class="material-icons icon-16pt text-white mr-2">check_circle</i> 6 Months Support</li>
-                                            <li class="d-flex align-items-center"><i class="material-icons icon-16pt text-white mr-2">check_circle</i> 100% Money Back Guarantee</li>
-                                        </ul>
-                                    </div> -->
-
+                                <div class="mb-3"><strong class="text-dark-gray">Módulo 2</strong></div>
+                                <p class="mb-3">
+                                   Descrição do módulo
+                                </p>
+                                <div class="">
+                                <ul class="list-group list-lessons">
+                                        <li class="list-group-item d-flex">
+                                            <a href="#">Aula 1</a>
+                                            <div class="ml-auto d-flex align-items-center">
+                                                <span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 1:42</span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex">
+                                            <a href="#">Aula 2</a>
+                                            <div class="ml-auto">
+                                                <span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 2:21</span>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex">
+                                            <a href="#">Aula 3</a>
+                                            <div class="ml-auto">
+                                                <span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 3:39</span>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -662,10 +675,10 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
     <!-- App Settings FAB -->
     <div id="app-settings">
         <app-settings layout-active="default" :layout-location="{
-      'default': 'student-course-purchase.html',
-      'fixed': 'fixed-student-course-purchase.html',
-      'fluid': 'fluid-student-course-purchase.html',
-      'mini': 'mini-student-course-purchase.html'
+      'default': 'student-lessons.html',
+      'fixed': 'fixed-student-lessons.html',
+      'fluid': 'fluid-student-lessons.html',
+      'mini': 'mini-student-lessons.html'
     }"></app-settings>
     </div>
 
@@ -696,15 +709,9 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
     <script src="assets/js/sidebar-mini.js"></script>
     <script src="assets/js/app.js"></script>
 
-    <!-- App Settings (safe to remove) -->
-    <!-- <script src="assets/js/app-settings.js"></script> -->
-
-
-
 
 </body>
 
 </html>
 
-<?php } //reinicia o php para poder fechar
-?>
+<?php } ?>
