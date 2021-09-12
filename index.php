@@ -464,15 +464,15 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                             <li class="sidebar-menu-item active">
                                 <a class="sidebar-menu-button" href="#">
                                     <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">queue_play_next</i>
-                                    <span class="sidebar-menu-text">Assistir Aula</span>
+                                    <span class="sidebar-menu-text">Assistir Aulas</span>
                                 </a>
                             </li>
-                            <li class="sidebar-menu-item">
+                            <!-- <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button" href="cursos.php">
                                     <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">shopping_cart</i>
                                     <span class="sidebar-menu-text">Curso Completo</span>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button" href="student-lessons.html">
                                     <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons locked">dns</i> <!-- se ainda não tiver apto, locked -->
