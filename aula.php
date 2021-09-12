@@ -72,6 +72,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
             $infoAula = $aulaQuery->fetch_all(MYSQLI_ASSOC);
             if ($aulaQuery->num_rows == 1) {
                 $aulaTitulo = $infoAula[0]['titulo'];
+                $youtube = $infoAula[0]['youtube'];
             } else {
                 die('error'); //redirecionar para index
             }
@@ -369,7 +370,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                         <div class="row">
                             <div class="col-lg-8">
                                 <div class="dp-preview card">
-                                <iframe width="100%" height="380" src="https://www.youtube.com/embed/gFnfi_8PHXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="https://www.youtube.com/embed/<?php echo $youtube ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <!-- <img src="https://trello-attachments.s3.amazonaws.com/605fabee0fd47879db19b6fc/60be4e4ed2e9e61bb9aa401d/20545830b75c56f31b3f66879f919d68/ss.png" alt="digital product" class="img-fluid"> -->
                                     <!-- <span class="dp-preview__overlay">
                                         <span class="btn btn-light">ASSISTIR</span>
