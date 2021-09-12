@@ -21,7 +21,6 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
     // fecha o php para o html entrar 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
