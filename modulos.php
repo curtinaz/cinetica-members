@@ -29,7 +29,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Courses</title>
+    <title>Workshop de Testes Funcionais</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -253,7 +253,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
 
                                 <div class="dropdown">
                                     <a href="#" data-toggle="dropdown" data-caret="false" class="dropdown-toggle navbar-toggler navbar-toggler-dashboard border-left d-flex align-items-center ml-navbar">
-                                        <span class="material-icons">account_circle</span><?php echo $firstname.' '.$lastname ?>
+                                        <span class="material-icons">account_circle</span>Cristian Curtinaz
                                     </a>
                                     <div id="company_menu" class="dropdown-menu dropdown-menu-right navbar-company-menu">
                                         <div class="dropdown-item d-flex align-items-center py-2 navbar-company-info py-3">
@@ -262,7 +262,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                                 <img src="assets/images/frontted-logo-blue.svg" width="43" height="43" alt="avatar">
                                             </span>
                                             <span class="flex d-flex flex-column">
-                                                <strong class="h5 m-0"><?php echo $firstname.' '.str_split($lastname)[0]."." ?></strong>
+                                                <strong class="h5 m-0">Cristian C.</strong>
                                                 <small class="text-muted text-uppercase">ESTUDANTE</small>
                                             </span>
 
@@ -274,7 +274,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                         <a class="dropdown-item d-flex align-items-center py-2" href="#">
                                             <span class="material-icons mr-2">settings</span> Configurações
                                         </a>
-                                        <a class="dropdown-item d-flex align-items-center py-2" href="./actions/logout.php">
+                                        <a class="dropdown-item d-flex align-items-center py-2" href="login.html">
                                             <span class="material-icons mr-2">exit_to_app</span> Sair
                                         </a>
                                     </div>
@@ -292,257 +292,82 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                 <div class="mdk-header-layout__content mdk-header-layout__content--fullbleed mdk-header-layout__content--scrollable page" style="padding-top: 60px;">
 
 
-
-
                     <div class="page__heading border-bottom">
                         <div class="container-fluid page__container d-flex align-items-center">
-                            <h1 class="mb-0">Courses</h1>
+                            <h1 class="mb-0">Workshop de Testes Funcionais</h1>
                         </div>
                     </div>
 
                     <div class="container-fluid page__container">
-                        <form action="#" class="mb-3 border-bottom pb-3">
-                            <div class="d-flex">
-                                <div class="search-form mr-3 search-form--light">
-                                    <input type="text" class="form-control" placeholder="Search courses" id="searchSample02">
-                                    <button class="btn" type="button"><i class="material-icons">search</i></button>
-                                </div>
-
-                                <div class="form-inline ml-auto">
-                                    <div class="form-group mr-3">
-                                        <label for="custom-select" class="form-label mr-1">Category</label>
-                                        <select id="custom-select" class="form-control custom-select" style="width: 200px;">
-                                            <option selected>All categories</option>
-                                            <option value="1">Vue.js</option>
-                                            <option value="2">Node.js</option>
-                                            <option value="3">GitHub</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="published01" class="form-label mr-1">Status</label>
-                                        <select id="published01" class="form-control custom-select" style="width: 200px;">
-                                            <option selected>All</option>
-                                            <option value="1">In Progress</option>
-                                            <option value="3">New Releases</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-
                         <div class="row">
+                            <div class="col-lg-8">
+                                <a href="" class="dp-preview card">
+                                    <img src="https://trello-attachments.s3.amazonaws.com/605fabee0fd47879db19b6fc/60be4e4ed2e9e61bb9aa401d/20545830b75c56f31b3f66879f919d68/ss.png" alt="digital product" class="img-fluid">
+                                    <span class="dp-preview__overlay">
+                                        <span class="btn btn-light">ASSISTIR</span>
+                                    </span>
+                                </a>
+                                <div class="mb-3"><strong class="text-dark-gray">DESCRIÇÃO</strong></div>
+                                <p class="mb-3">
+                                    Principais Testes Funcionais e metodologias de avaliação.
+                                </p>
 
-                            <div class="col-md-3">
-                                <div class="card card__course">
-                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
-                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
-                                            <span class="course__title">React</span>
-                                            <span class="course__subtitle">Learn the Basics</span>
-                                        </a>
-                                    </div>
-                                    <div class="p-3">
-                                        <div class="mb-2">
-                                            <span class="course__title">CURSO NÚMERO 1</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <strong class="h4 m-0">$49</strong>
-                                            <a href="#" class="btn btn-primary ml-auto"><i class="material-icons">add_shopping_cart</i></a>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-
-                            <div class="col-md-3">
-                                <div class="card card__course">
-                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
-                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
-                                            <span><img src="assets/images/logos/vuejs.svg" class="mb-1" style="width:34px;" alt="logo"></span>
-                                            <span class="course__title">Vue.js</span>
-                                            <span class="course__subtitle">Quick Tips</span>
-                                        </a>
+                            <div class="col-lg-4">
+                                <div class="card card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                       <img width="100%" src="https://cineticaedu.com/wp-content/uploads/2021/05/Agrupar-4-min.png">
                                     </div>
-                                    <div class="p-3">
-                                        <div class="mb-2">
-                                            <span class="mr-2">
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star_half</i></a>
+
+                                    <div class="mb-4">
+                                        <button class="btn btn-outline-success btn-block btn-lg">Marcar como concluído</button>
+                                        <button class="btn btn-light btn-block">Emitir certificado</button>
+                                    </div>
+
+                                    <div class="mb-4 text-center">
+                                        <div class="d-flex flex-column align-items-center justify-content-center">
+
+                                            <span class="mb-1">
+                                                <a href="#" class="rating-link active"><i class="material-icons ">star</i></a>
+                                                <a href="#" class="rating-link active"><i class="material-icons ">star</i></a>
+                                                <a href="#" class="rating-link active"><i class="material-icons ">star</i></a>
+                                                <a href="#" class="rating-link active"><i class="material-icons ">star</i></a>
+                                                <a href="#" class="rating-link active"><i class="material-icons ">star_half</i></a>
                                             </span>
-                                            <strong>4.7</strong><br />
-                                            <small class="text-muted">(391 ratings)</small>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <strong class="h4 m-0">$49</strong>
-                                            <a href="#" class="btn btn-primary ml-auto"><i class="material-icons">add_shopping_cart</i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <strong>4.8/5</strong>
+                                                <span class="text-muted ml-1">&mdash; 354 avaliações</span>
+                                            </div>
 
-                            <div class="col-md-3">
-                                <div class="card card__course">
-                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
-                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
-                                            <span><img src="assets/images/logos/angular.svg" class="mb-1" style="width:34px;" alt="logo"></span>
-                                            <span class="course__title">Angular</span>
-                                            <span class="course__subtitle">Back to Basics</span>
-                                        </a>
-                                    </div>
-                                    <div class="p-3">
-                                        <div class="mb-2">
-                                            <span class="mr-2">
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star_half</i></a>
-                                            </span>
-                                            <strong>4.7</strong><br />
-                                            <small class="text-muted">(391 ratings)</small>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <strong class="h4 m-0">$49</strong>
-                                            <a href="#" class="btn btn-primary ml-auto"><i class="material-icons">add_shopping_cart</i></a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
 
-                            <div class="col-md-3">
-                                <div class="card card__course">
-                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
-                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
-                                            <span><img src="assets/images/logos/javascript.svg" class="mb-1" style="width:34px;" alt="logo"></span>
-                                            <span class="course__title">Javascript</span>
-                                            <span class="course__subtitle">ES6 and Beyond</span>
-                                        </a>
-                                    </div>
-                                    <div class="p-3">
-                                        <div class="mb-2">
-                                            <span class="mr-2">
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star_half</i></a>
-                                            </span>
-                                            <strong>4.7</strong><br />
-                                            <small class="text-muted">(391 ratings)</small>
+                                    <!-- <div class="list-group list-group-flush mb-4">
+                                        <div class="list-group-item bg-transparent d-flex align-items-center px-0">
+                                            <strong>Level</strong>
+                                            <div class="ml-auto">Beginner</div>
                                         </div>
-                                        <div class="d-flex align-items-center">
-                                            <strong class="h4 m-0">$49</strong>
-                                            <a href="#" class="btn btn-primary ml-auto"><i class="material-icons">add_shopping_cart</i></a>
+                                        <div class="list-group-item bg-transparent d-flex align-items-center px-0">
+                                            <strong>Released</strong>
+                                            <div class="ml-auto">21 January 2019</div>
+                                        </div>
+                                        <div class="list-group-item bg-transparent d-flex align-items-center px-0">
+                                            <strong>Students</strong>
+                                            <div class="ml-auto">393</div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
 
-                            <div class="col-md-3">
-                                <div class="card card__course">
-                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
-                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
-                                            <span><img src="assets/images/logos/node.svg" class="mb-1" style="width:34px;" alt="logo"></span>
-                                            <span class="course__title">Node</span>
-                                            <span class="course__subtitle">ES6 and Beyond</span>
-                                        </a>
-                                    </div>
-                                    <div class="p-3">
-                                        <div class="mb-2">
-                                            <span class="mr-2">
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star_half</i></a>
-                                            </span>
-                                            <strong>4.7</strong><br />
-                                            <small class="text-muted">(391 ratings)</small>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <strong class="h4 m-0">$49</strong>
-                                            <a href="#" class="btn btn-primary ml-auto"><i class="material-icons">add_shopping_cart</i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    <div class="card card-body mb-0 bg-dark">
+                                        <ul class="list-unstyled text-white ml-1 mb-0">
+                                            <li class="d-flex align-items-center pb-1"><i class="material-icons icon-16pt text-white mr-2">check_circle</i> Created by the Frontted Team</li>
+                                            <li class="d-flex align-items-center pb-1"><i class="material-icons icon-16pt text-white mr-2">check_circle</i> 6 Months Support</li>
+                                            <li class="d-flex align-items-center"><i class="material-icons icon-16pt text-white mr-2">check_circle</i> 100% Money Back Guarantee</li>
+                                        </ul>
+                                    </div> -->
 
-                            <div class="col-md-3">
-                                <div class="card card__course">
-                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
-                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
-                                            <span><img src="assets/images/logos/gitlab.png" class="mb-1" style="width:34px;" alt="logo"></span>
-                                            <span class="course__title">Gitlab</span>
-                                            <span class="course__subtitle">Git Workflows</span>
-                                        </a>
-                                    </div>
-                                    <div class="p-3">
-                                        <div class="mb-2">
-                                            <span class="mr-2">
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star_half</i></a>
-                                            </span>
-                                            <strong>4.7</strong><br />
-                                            <small class="text-muted">(391 ratings)</small>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <strong class="h4 m-0">$49</strong>
-                                            <a href="#" class="btn btn-primary ml-auto"><i class="material-icons">add_shopping_cart</i></a>
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="card card__course">
-                                    <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
-                                        <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="#">
-                                            <span><img src="assets/images/logos/angular.svg" class="mb-1" style="width:34px;" alt="logo"></span>
-                                            <span class="course__title">Angular</span>
-                                            <span class="course__subtitle">Typescript and Beyond</span>
-                                        </a>
-                                    </div>
-                                    <div class="p-3">
-                                        <div class="mb-2">
-                                            <span class="mr-2">
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                                <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star_half</i></a>
-                                            </span>
-                                            <strong>4.7</strong><br />
-                                            <small class="text-muted">(391 ratings)</small>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <strong class="h4 m-0">$49</strong>
-                                            <a href="#" class="btn btn-primary ml-auto"><i class="material-icons">add_shopping_cart</i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <hr>
-                        <div class="d-flex flex-row align-items-center mb-3">
-                            <div class="form-inline">
-                                View
-                                <select class="custom-select ml-2">
-                                    <option value="20" selected>20</option>
-                                    <option value="50">50</option>
-                                    <option value="100">100</option>
-                                    <option value="200">200</option>
-                                </select>
-                            </div>
-                            <div class="ml-auto">
-                                20 <span class="text-muted">of 100</span> <a href="#" class="icon-muted"><i class="material-icons float-right">arrow_forward</i></a>
                             </div>
                         </div>
-
                     </div>
 
 
@@ -586,14 +411,14 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                     <div class="sidebar-heading">Estudante</div>
                     <div class="sidebar-block p-0">
                         <ul class="sidebar-menu mt-0">
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" href="index.php">
+                            <li class="sidebar-menu-item active">
+                                <a class="sidebar-menu-button" href="student-courses.html">
                                     <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">queue_play_next</i>
                                     <span class="sidebar-menu-text">Assistir Aula</span>
                                 </a>
                             </li>
-                            <li class="sidebar-menu-item active">
-                                <a class="sidebar-menu-button" href="#">
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="student-course-purchase.html">
                                     <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">shopping_cart</i>
                                     <span class="sidebar-menu-text">Curso Completo</span>
                                 </a>
@@ -787,10 +612,10 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
     <!-- App Settings FAB -->
     <div id="app-settings">
         <app-settings layout-active="default" :layout-location="{
-      'default': 'student-courses.html',
-      'fixed': 'fixed-student-courses.html',
-      'fluid': 'fluid-student-courses.html',
-      'mini': 'mini-student-courses.html'
+      'default': 'student-course-purchase.html',
+      'fixed': 'fixed-student-course-purchase.html',
+      'fluid': 'fluid-student-course-purchase.html',
+      'mini': 'mini-student-course-purchase.html'
     }"></app-settings>
     </div>
 
@@ -822,7 +647,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
     <script src="assets/js/app.js"></script>
 
     <!-- App Settings (safe to remove) -->
-    <script src="assets/js/app-settings.js"></script>
+    <!-- <script src="assets/js/app-settings.js"></script> -->
 
 
 
