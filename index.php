@@ -398,6 +398,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                                 $aulaTitulo = $infoAula[0]['titulo'];
                                                 $youtube = $infoAula[0]['youtube'];
                                             }
+                                            
                                             echo '</ul>';
                                             echo '</div><br>';
 
