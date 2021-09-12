@@ -68,12 +68,18 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
     if(isset($_GET['id'])) {
         if ($_GET['id']) {
             $aulaid = $_GET['id'];
-            $infoAula = $conexao->query("SELECT * FROM aulas WHERE id = '$aulaid");
+            $aulaQuery = $conexao->query("SELECT * FROM aulas WHERE id = '$aulaid'");
+            $infoAula = $aulaQuery->fetch_all(MYSQLI_ASSOC);
+            if ($aulaQuery->num_rows == 1) {
+                $aulaTitulo = $infoAula[0]['titulo'];
+            } else {
+                die('error'); //redirecionar para index
+            }
         } else {
-            die('error');
+            die('error'); //redirecionar para index
         }
     } else {
-        die('error');
+        die('error'); //redirecionar para index
     }
 
     $nameArray = explode(" ", $name);
@@ -90,7 +96,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Workshop de Testes Funcionais</title>
+    <title><?php echo $aulaTitulo ?> - Dermato Expert</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -355,7 +361,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
 
                     <div class="page__heading border-bottom">
                         <div class="container-fluid page__container d-flex align-items-center">
-                            <h1 class="mb-0">Workshop de Testes Funcionais</h1>
+                            <h1 class="mb-0"><?php echo $aulaTitulo ?></h1>
                         </div>
                     </div>
 
