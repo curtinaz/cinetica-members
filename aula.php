@@ -481,7 +481,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                     <div class="sidebar-block p-0">
                         <ul class="sidebar-menu mt-0">
                             <li class="sidebar-menu-item active">
-                                <a class="sidebar-menu-button" href="#">
+                                <a class="sidebar-menu-button" href="./">
                                     <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">queue_play_next</i>
                                     <span class="sidebar-menu-text">Assistir Aulas</span>
                                 </a>
