@@ -67,7 +67,8 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
 
     if(isset($_GET['id'])) {
         if ($_GET['id']) {
-
+            $aulaid = $_GET['id'];
+            $loginQuery = $conexao->query("SELECT * FROM user WHERE email = '$email' AND senha = '$senha'");
         } else {
             die('error');
         }
