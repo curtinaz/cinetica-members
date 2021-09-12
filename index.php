@@ -391,10 +391,16 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                             $aulasQuery = $conexao->query("SELECT * FROM aulas WHERE modid = '$i'");
                                             $infoAulas = $aulasQuery->fetch_all(MYSQLI_ASSOC);
 
+                                            echo '<div>';
+                                            echo '<ul class="list-group list-lessons">';
+
                                             for ($j = 0; $j = $aulasQuery->num_rows; $j++) {
                                                 $aulaTitulo = $infoAula[0]['titulo'];
                                                 $youtube = $infoAula[0]['youtube'];
                                             }
+                                            echo '</ul>';
+                                            echo '</div><br>';
+
                                         }
                                     }
 
