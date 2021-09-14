@@ -421,7 +421,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                     <div class="sidebar sidebar-dark sidebar-left bg-dark-gray" data-perfect-scrollbar>
 
                     <div class="d-flex align-items-center sidebar-p-a">
-                            <img src="./assets/logo.png" width="40%" class="flex align-items-center" style="
+                            <img src="./assets/logo.png" width="40%" style="padding: 8px 40px 0 40px;" class="flex align-items-center" style="
     width: 20%;
 ">
                         </div>
