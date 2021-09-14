@@ -312,7 +312,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                     </div>
 
                                     <div class="mt-1">
-                                        <a href="#" class="btn btn-light btn-rounded mr-2">Assistir proxima aula</a>
+                                        <!-- <a href="#" class="btn btn-light btn-rounded mr-2">Assistir proxima aula</a> -->
                                         <!-- <a href="#" class="btn btn-outline-light text-white btn-hover-primary btn-rounded"><i class="material-icons">local_activity</i> Add to list</a> -->
                                     </div>
                                 </div>
@@ -378,39 +378,43 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                     $infoModulos = $modulosQuery->fetch_all(MYSQLI_ASSOC);
 
 
-                                    if ($modulosQuery->num_rows > 1) {
+                                    if ($modulosQuery->num_rows >= 1) {
 
-                                        for ($i = 0; $i > $modulosQuery->num_rows; $i++) {
-                                            echo '<div class="mb-3"><strong class="text-dark-gray">Módulo 1</strong></div>';
+                                        for ($i = 0; $i < $modulosQuery->num_rows; $i++) {
+
+                                            $modTitle = $infoModulos[$i]['nome'];
+
+                                            echo '<div class="mb-3"><strong class="text-dark-gray">'. $modTitle .'</strong></div>';
                                             echo '<p class="mb-3">';
                                             echo 'Descrição do módulo';
                                             echo '</p>';
 
                                             $modid = $infoModulos[$i]['id'];
 
-                                            $aulasQuery = $conexao->query("SELECT * FROM aulas WHERE modid = '$i'");
+                                            $aulasQuery = $conexao->query("SELECT * FROM aulas WHERE modid = '$modid'");
                                             $infoAulas = $aulasQuery->fetch_all(MYSQLI_ASSOC);
 
                                             echo '<div>';
                                             echo '<ul class="list-group list-lessons">';
 
-                                            for ($j = 0; $j = $aulasQuery->num_rows; $j++) {
-                                                $aulaTitulo = $infoAula[0]['titulo'];
-                                                $youtube = $infoAula[0]['youtube'];
-
-                                                echo '<li class="list-group-item d-flex">';
-                                                echo '<a href="#">Aula 1</a>';
-                                                echo '<div class="ml-auto d-flex align-items-center">';
-                                                    echo '<span class="badge badge-success mr-2">ASSISTIDA</span>';
-                                                    echo '<span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 7:54</span>';
-                                                echo '</div>';
-                                            echo '</li>';
-
+                                            if ($aulasQuery->num_rows >=1 ) {
+                                                for ($j = 0; $j < $aulasQuery->num_rows; $j++) {
+                                                    // $aulaTitulo = $infoAulas[$j]['titulo'];
+                                                    // $aulaId = $infoAulas[$j]['id'];
+    
+                                                    echo '<li class="list-group-item d-flex">';
+                                                    echo '<a href=" ./aula?id=' . $infoAulas[$j]['id'] . ' ">' . $infoAulas[$j]['titulo']. '</a>';
+                                                    echo '<div class="ml-auto d-flex align-items-center">';
+                                                    // echo '<span class="badge badge-success mr-2">ASSISTIDA</span>';
+                                                    echo '<span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> '. $infoAulas[$j]['tamanho'] .'</span>';
+                                                    echo '</div>';
+                                                    echo '</li>';
+                                                }
                                             }
+                                            
 
                                             echo '</ul>';
                                             echo '</div><br>';
-
                                         }
                                     }
 
@@ -419,7 +423,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
 
 
 
-                                    <div class="">
+                                    <!-- <div class="">
                                         <ul class="list-group list-lessons">
 
                                             <li class="list-group-item d-flex">
@@ -442,9 +446,9 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                                 </div>
                                             </li>
                                         </ul>
-                                    </div><br>
+                                    </div><br> -->
 
-                                    <div class="mb-3"><strong class="text-dark-gray">Módulo 2</strong></div>
+                                    <!-- <div class="mb-3"><strong class="text-dark-gray">Módulo 2</strong></div>
                                     <p class="mb-3">
                                         Descrição do módulo
                                     </p>
@@ -469,7 +473,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                                 </div>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
