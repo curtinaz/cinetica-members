@@ -373,61 +373,6 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                     }
 
                                     ?>
-
-
-
-
-                                    <!-- <div class="">
-                                        <ul class="list-group list-lessons">
-
-                                            <li class="list-group-item d-flex">
-                                                <a href="#">Aula 1</a>
-                                                <div class="ml-auto d-flex align-items-center">
-                                                    <span class="badge badge-success mr-2">ASSISTIDA</span>
-                                                    <span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 7:54</span>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item d-flex">
-                                                <a href="#">Aula 2</a>
-                                                <div class="ml-auto">
-                                                    <span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 2:21</span>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item d-flex">
-                                                <a href="#">Aula 3</a>
-                                                <div class="ml-auto">
-                                                    <span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 3:39</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div><br> -->
-
-                                    <!-- <div class="mb-3"><strong class="text-dark-gray">Módulo 2</strong></div>
-                                    <p class="mb-3">
-                                        Descrição do módulo
-                                    </p>
-                                    <div class="">
-                                        <ul class="list-group list-lessons">
-                                            <li class="list-group-item d-flex">
-                                                <a href="#">Aula 1</a>
-                                                <div class="ml-auto d-flex align-items-center">
-                                                    <span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 1:42</span>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item d-flex">
-                                                <a href="#">Aula 2</a>
-                                                <div class="ml-auto">
-                                                    <span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 2:21</span>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item d-flex">
-                                                <a href="#">Aula 3</a>
-                                                <div class="ml-auto">
-                                                    <span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 3:39</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
