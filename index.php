@@ -379,7 +379,6 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
 
 
                     </div>
-                    <!-- // END header-layout__content -->
 
                 </div>
                 <!-- // END header-layout -->
