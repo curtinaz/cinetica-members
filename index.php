@@ -126,7 +126,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
 
 
                                     <div class="navbar-collapse collapse" id="navbarsExample03">
-                                        <p class="sidebar-brand text-white">Cinética</p>
+                                        <p class="sidebar-brand text-white">Dermato Expert</p>
                                     </div>
 
 
@@ -432,8 +432,8 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                     </svg>
                                 </span>
                                 <span class="flex d-flex flex-column">
-                                    <span class="sidebar-brand">Cinética</span>
-                                    <small>Escola do Movimento</small>
+                                    <span class="sidebar-brand">Dermato</span>
+                                    <small>Expert</small>
                                 </span>
                             </a>
                         </div>
@@ -472,7 +472,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                     </a>
                                 </li> -->
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="login.html">
+                                    <a class="sidebar-menu-button" href="./actions/logout">
                                         <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">exit_to_app</i>
                                         <span class="sidebar-menu-text">Sair</span>
                                     </a>
