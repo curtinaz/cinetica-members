@@ -28,7 +28,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Lessons</title>
+        <title>Módulos - Dermato Expert</title>
 
         <!-- Prevent the demo from appearing in search engines -->
         <meta name="robots" content="noindex">
@@ -356,7 +356,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                                     // $aulaTitulo = $infoAulas[$j]['titulo'];
                                                     // $aulaId = $infoAulas[$j]['id'];
     
-                                                    echo '<li class="list-group-item d-flex">';
+                                                    echo '<li style="cursor: pointer;" onClick=window.location.href="./aula?id=' . $infoAulas[$j]['id'] . '" class="list-group-item d-flex">';
                                                     echo '<a href=" ./aula?id=' . $infoAulas[$j]['id'] . ' ">' . $infoAulas[$j]['titulo']. '</a>';
                                                     echo '<div class="ml-auto d-flex align-items-center">';
                                                     // echo '<span class="badge badge-success mr-2">ASSISTIDA</span>';

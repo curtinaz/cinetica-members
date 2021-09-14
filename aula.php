@@ -72,6 +72,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
             $infoAula = $aulaQuery->fetch_all(MYSQLI_ASSOC);
             if ($aulaQuery->num_rows == 1) {
                 $aulaTitulo = $infoAula[0]['titulo'];
+                $aulaDesc = $infoAula[0]['corpo'];
                 $youtube = $infoAula[0]['youtube'];
             } else {
                 die('error'); //redirecionar para index
@@ -376,10 +377,17 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                         <span class="btn btn-light">ASSISTIR</span>
                                     </span> -->
                                 </div>
-                                <div class="mb-3"><strong class="text-dark-gray">DESCRIÇÃO</strong></div>
-                                <p class="mb-3">
-                                    Principais Testes Funcionais e metodologias de avaliação.
-                                </p><br><br>
+
+                                <?php
+                                if ($aulaDesc) {
+
+                                    echo '<div class="mb-3"><strong class="text-dark-gray">DESCRIÇÃO</strong></div>';
+                                    echo '<p class="mb-3">' . $aulaDesc . '</p>';
+
+                                }
+                                ?>
+
+                                <br><br>
 
                             </div>
                             <div class="col-lg-4">
