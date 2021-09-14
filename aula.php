@@ -457,7 +457,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                 </a>
                             </li> -->
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="login.html">
+                                    <a class="sidebar-menu-button" href="./actions/logout">
                                         <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">exit_to_app</i>
                                         <span class="sidebar-menu-text">Sair</span>
                                     </a>
