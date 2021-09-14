@@ -461,7 +461,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                             </li> -->
                                 <li class="sidebar-menu-item">
                                     <a class="sidebar-menu-button" href="student-lessons.html">
-                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons locked">dns</i> <!-- se ainda não tiver apto, locked -->
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons locked">dns</i>
                                         <span class="sidebar-menu-text">Certificado</span>
                                     </a>
                                 </li>
