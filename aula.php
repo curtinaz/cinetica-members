@@ -446,9 +446,9 @@ header('Location: ./');
                                     <span class="sidebar-menu-text">Curso Completo</span>
                                 </a>
                             </li> -->
-                            <li class="sidebar-menu-item">
+                            <!-- <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button" href="student-lessons.html">
-                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons locked">dns</i> <!-- se ainda não tiver apto, locked -->
+                                    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons locked">dns</i>
                                     <span class="sidebar-menu-text">Certificado</span>
                                 </a>
                             </li>
@@ -457,7 +457,7 @@ header('Location: ./');
                                     <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">settings</i>
                                     <span class="sidebar-menu-text">Editar conta</span>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button" href="login.html">
                                     <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">exit_to_app</i>
