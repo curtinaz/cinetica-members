@@ -336,10 +336,11 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                         for ($i = 0; $i < $modulosQuery->num_rows; $i++) {
 
                                             $modTitle = $infoModulos[$i]['nome'];
+                                            $modDesc = $infoModulos[$i]['descricao'];
 
                                             echo '<div class="mb-3"><strong class="text-dark-gray">'. $modTitle .'</strong></div>';
                                             echo '<p class="mb-3">';
-                                            echo 'Descrição do módulo';
+                                            echo $modDesc;
                                             echo '</p>';
 
                                             $modid = $infoModulos[$i]['id'];
