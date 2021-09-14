@@ -459,7 +459,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                     <span class="sidebar-menu-text">Curso Completo</span>
                                 </a>
                             </li> -->
-                                <li class="sidebar-menu-item">
+                                <!-- <li class="sidebar-menu-item">
                                     <a class="sidebar-menu-button" href="student-lessons.html">
                                         <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons locked">dns</i>
                                         <span class="sidebar-menu-text">Certificado</span>
@@ -470,7 +470,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                         <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">settings</i>
                                         <span class="sidebar-menu-text">Editar conta</span>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="sidebar-menu-item">
                                     <a class="sidebar-menu-button" href="login.html">
                                         <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">exit_to_app</i>
