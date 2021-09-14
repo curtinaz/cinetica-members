@@ -397,8 +397,17 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                             for ($j = 0; $j = $aulasQuery->num_rows; $j++) {
                                                 $aulaTitulo = $infoAula[0]['titulo'];
                                                 $youtube = $infoAula[0]['youtube'];
+
+                                                echo '<li class="list-group-item d-flex">';
+                                                echo '<a href="#">Aula 1</a>';
+                                                echo '<div class="ml-auto d-flex align-items-center">';
+                                                    echo '<span class="badge badge-success mr-2">ASSISTIDA</span>';
+                                                    echo '<span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> 7:54</span>';
+                                                echo '</div>';
+                                            echo '</li>';
+
                                             }
-                                            
+
                                             echo '</ul>';
                                             echo '</div><br>';
 
