@@ -338,7 +338,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                             $modTitle = $infoModulos[$i]['nome'];
                                             $modDesc = $infoModulos[$i]['descricao'];
 
-                                            echo '<div class="mb-3"><strong class="text-dark-gray">'. $modTitle .'</strong></div>';
+                                            echo '<div class="mb-3"><strong class="text-dark-gray">' . $modTitle . '</strong></div>';
                                             echo '<p class="mb-3">';
                                             echo $modDesc;
                                             echo '</p>';
@@ -351,21 +351,21 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                             echo '<div>';
                                             echo '<ul class="list-group list-lessons">';
 
-                                            if ($aulasQuery->num_rows >=1 ) {
+                                            if ($aulasQuery->num_rows >= 1) {
                                                 for ($j = 0; $j < $aulasQuery->num_rows; $j++) {
                                                     // $aulaTitulo = $infoAulas[$j]['titulo'];
                                                     // $aulaId = $infoAulas[$j]['id'];
-    
+
                                                     echo '<li style="cursor: pointer;" onClick=window.location.href="./aula?id=' . $infoAulas[$j]['id'] . '" class="list-group-item d-flex">';
-                                                    echo '<a href=" ./aula?id=' . $infoAulas[$j]['id'] . ' ">' . $infoAulas[$j]['titulo']. '</a>';
+                                                    echo '<a href=" ./aula?id=' . $infoAulas[$j]['id'] . ' ">' . $infoAulas[$j]['titulo'] . '</a>';
                                                     echo '<div class="ml-auto d-flex align-items-center">';
                                                     // echo '<span class="badge badge-success mr-2">ASSISTIDA</span>';
-                                                    echo '<span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> '. $infoAulas[$j]['tamanho'] .'</span>';
+                                                    echo '<span class="text-muted"><i class="material-icons icon-16pt icon-light">watch_later</i> ' . $infoAulas[$j]['tamanho'] . '</span>';
                                                     echo '</div>';
                                                     echo '</li>';
                                                 }
                                             }
-                                            
+
 
                                             echo '</ul>';
                                             echo '</div><br>';
@@ -379,12 +379,9 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
 
 
                     </div>
-
                 </div>
-                <!-- // END header-layout -->
-
             </div>
-            <!-- // END drawer-layout__content -->
+
 
             <div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="start">
                 <div class="mdk-drawer__content">
