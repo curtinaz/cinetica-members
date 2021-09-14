@@ -447,7 +447,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                     <div class="sidebar sidebar-dark sidebar-left bg-dark-gray" data-perfect-scrollbar>
 
                         <div class="d-flex align-items-center sidebar-p-a sidebar-account flex-shrink-0">
-                            <a href="index.html" class="flex d-flex align-items-center text-underline-0">
+                            <a href="./" class="flex d-flex align-items-center text-underline-0">
                                 <span class="mr-3">
                                     <!-- LOGO -->
                                     <svg width="30px" viewBox="0 0 27 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
