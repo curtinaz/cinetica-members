@@ -341,8 +341,12 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
                                         </div>
 
                                         <div class="mb-4">
-                                            <button class="btn btn-outline-success btn-block btn-lg">Marcar como concluído</button>
-                                            <a href="./certificado/gerador.php"><button class="btn btn-light btn-block">Emitir certificado</button></a>
+                                            <button class="btn btn-outline-success btn-block btn-lg">Marcar como concluído</button><br>
+                                            <?php 
+                                                if($_GET['id'] == 15) {
+                                                   echo '<a href="./certificado/gerador.php"><button class="btn btn-light btn-block">Emitir certificado</button></a>';
+                                                }
+                                            ?>
                                         </div>
 
                                         <div class="mb-4 text-center">
