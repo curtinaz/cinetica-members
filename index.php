@@ -126,7 +126,7 @@ if (!isset($_COOKIE['logado'])) { // testa se o usuário está logado, se não e
 
 
                                     <div class="navbar-collapse collapse" id="navbarsExample03">
-                                        <!-- <p class="sidebar-brand text-white">Dermato Expert</p> -->
+                                        <p class="sidebar-brand text-white">Dermato Expert</p>
                                     </div>
 
 
